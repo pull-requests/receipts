@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/items"
+                        style="?android:listSeparatorTextViewStyle"/>
+
+                    <com.alexfu.onereceiptcamera.widget.NonScrollableListView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/section_space"
+                        android:animateLayoutChanges="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/when"
+                        style="?android:listSeparatorTextViewStyle"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/section_space">
+
+                        <Spinner
+                            android:id="@+id/edit_when_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <Spinner
+                            android:id="@+id/edit_when_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <Spinner
+                            android:id="@+id/edit_when_year"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category"
+                        style="?android:listSeparatorTextViewStyle"/>
+
+                    <Spinner
+                        android:id="@+id/edit_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/section_space"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="280dp">
+
+                    <CheckBox
+                        android:id="@+id/send_receipt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/send_to_onereceipt"/>
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#c5c5c5"
+                        android:scaleType="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/undobar"
+            style="@style/UndoBar">
+
+            <TextView
+                android:id="@+id/undobar_message"
+                style="@style/UndoBarMessage"/>
+
+            <Button
+                android:id="@+id/undobar_button"
+                style="@style/UndoBarButton"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        style="?android:buttonBarStyle"
+        android:divider="@drawable/divider_horizontal_dark"
+        android:background="#333333">
+
+        <FrameLayout
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:actionButtonStyle">
+
+            <TextView
+                style="?android:actionBarTabTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="20dp"
+                android:drawableLeft="@drawable/ic_action_cancel"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/discard"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="?android:actionButtonStyle">
+
+            <TextView
+                style="?android:actionBarTabTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingRight="20dp"
+                android:drawableLeft="@drawable/ic_action_accept"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/done"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

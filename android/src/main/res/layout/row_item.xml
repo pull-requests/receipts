@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <EditText android:id="@+id/edit_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:inputType="textNoSuggestions"/>
+
+    <com.alexfu.onereceiptcamera.widget.MultiplierEditText
+        android:id="@+id/edit_multiplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:singleLine="true"
+        android:inputType="number"/>
+
+    <com.alexfu.onereceiptcamera.widget.CurrencyEditText
+        android:id="@+id/edit_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:singleLine="true"
+        android:inputType="numberDecimal"/>
+
+    <ImageButton android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:src="@drawable/ic_trash_light"
+        android:background="?android:selectableItemBackground"/>
+
+</LinearLayout>

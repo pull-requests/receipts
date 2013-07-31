@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="OneReceipt">
+        <EditTextPreference android:key="username_onereceipt"
+            android:title="@string/settings_title_onereceipt"
+            android:summary="@string/settings_summary_onereceipt"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:hint="@string/hint_onereceipt_username"/>
+    </PreferenceCategory>
+</PreferenceScreen>

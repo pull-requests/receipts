@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Receipts</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="header_this_week">THIS WEEK</string>
+    <string name="header_last_week">LAST WEEK</string>
+    <string name="header_some_time_ago">SOME TIME AGO</string>
+
+    <string name="add_item">Add Item</string>
+    <string name="menu_add_receipt">Add Receipt</string>
+    <string name="title_new_receipt">New Receipt</string>
+    <string name="title_edit_receipt">Edit Receipt</string>
+    <string name="menu_delete">Delete</string>
+
+    <string name="settings">Settings</string>
+    <string name="settings_title_onereceipt">OneReceipt Username</string>
+    <string name="settings_summary_onereceipt">Send receipts to OneReceipt.</string>
+
+    <string name="undo">Undo</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string name="label">Label</string>
+    <string name="when">When</string>
+    <string name="category">Category</string>
+    <string name="items">Items</string>
+
+    <string name="item_count">+%1$s items,</string>
+
+    <plurals name="item_deleted">
+        <item quantity="other">%d items deleted.</item>
+        <item quantity="one">1 item deleted.</item>
+    </plurals>
+
+    <string name="discard">Discard</string>
+    <string name="done">Done</string>
+
+    <string name="send_to_onereceipt">Send to OneReceipt</string>
+
+    <string name="hint_onereceipt_username">e.g. jim</string>
+</resources>

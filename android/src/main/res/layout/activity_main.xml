@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_secondary">
+
+    <com.emilsjolander.components.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:choiceMode="multipleChoiceModal"
+        android:dividerHeight="1px"
+        android:divider="@color/list_divider"/>
+
+    <LinearLayout
+        android:id="@+id/undobar"
+        style="@style/UndoBar"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/undobar_message"
+            style="@style/UndoBarMessage"/>
+
+        <Button
+            android:id="@+id/undobar_button"
+            style="@style/UndoBarButton"/>
+    </LinearLayout>
+
+</RelativeLayout>
