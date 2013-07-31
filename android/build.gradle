@@ -13,11 +13,8 @@ repositories {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:13.0.+'
     compile project(':libraries:stickylistheaders')
-    compile files('libs/retrofit-1.1.1.jar')
-    compile files('libs/gson-2.2.4.jar')
-    compile files('libs/crittercism_v3_0_11_sdkonly.jar')
+    compile fileTree(dir: 'libs', include: '*.jar')
 }
 
 android {
